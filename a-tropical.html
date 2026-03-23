@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>A) Warm Tropical</title>
+<style>
+  * { margin:0;padding:0;box-sizing:border-box; }
+  body { font-family:'Inter',-apple-system,sans-serif; background:#faf6f0; color:#3a3226; min-height:100vh; }
+  .nav { display:flex;gap:0;padding:0 2rem;background:#2d4a3e;border-bottom:3px solid #e8a547; }
+  .nav a { padding:0.8rem 1.5rem;color:#a8c5b8;text-decoration:none;font-size:0.85rem; }
+  .nav a:hover { color:#fff; }
+  .nav a.active { color:#fff;border-bottom:2px solid #e8a547; }
+  .header { background:linear-gradient(135deg,#2d4a3e,#1a3328);padding:1.5rem 2.5rem;color:#fff; }
+  .header h1 { font-size:1.5rem;font-weight:300; }
+  .header h1 span { font-weight:600;color:#e8a547; }
+  .header p { color:#a8c5b8;font-size:0.82rem;margin-top:0.3rem; }
+  .table-wrap { margin:1.5rem 2.5rem;overflow-x:auto;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.08); }
+  table { width:100%;border-collapse:collapse;font-size:0.82rem;background:#fff; }
+  th { background:#2d4a3e;color:#c8ddd2;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.8px;padding:0.7rem;text-align:left; }
+  td { padding:0.6rem 0.7rem;border-top:1px solid #f0ebe3; }
+  tr:hover { background:#f8f4ec; }
+  .hotel-koloa { border-left:3px solid #4a90b8; }
+  .hotel-hyatt { border-left:3px solid #e8a547; }
+  .hotel-hanalei { border-left:3px solid #9b6db5; }
+  .hotel-koakea { border-left:3px solid #d4748a; }
+  .price-cell { font-weight:600;color:#3a3226; }
+  .net-cell { font-weight:700;color:#2d4a3e; }
+  .val-cell { color:#7a7060;font-size:0.78rem; }
+  .tag { display:inline-block;padding:0.15rem 0.6rem;border-radius:12px;font-size:0.65rem;font-weight:500; }
+  .tag-cheap { background:#e8f5e9;color:#2e7d32; }
+  .tag-mid { background:#fff3e0;color:#e65100; }
+  .tag-expensive { background:#ffebee;color:#c62828; }
+</style>
+</head><body>
+<div class="nav">
+  <a href="a-tropical.html" class="active">A) Warm Tropical</a>
+  <a href="b-minimal.html">B) Clean Minimal</a>
+  <a href="c-luxury.html">C) Dark Luxury</a>
+  <a href="d-soft.html">D) Soft Dark</a>
+</div>
+<div class="header">
+  <h1>🌺 Kauai <span>Trip Planner</span></h1>
+  <p>Sandy warmth meets resort elegance — Costco Travel + Southwest</p>
+</div>
+<div class="table-wrap"><div id="table"></div></div>
+<script src="data.js"></script>
+<script>renderTable('table');</script>
+</body></html>

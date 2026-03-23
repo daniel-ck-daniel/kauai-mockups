@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>D) Soft Dark</title>
+<style>
+  * { margin:0;padding:0;box-sizing:border-box; }
+  body { font-family:'Inter',-apple-system,sans-serif;background:#1e1e24;color:#c8c8d0;min-height:100vh; }
+  .nav { display:flex;gap:0;padding:0 2rem;background:#26262e;border-bottom:1px solid #35353f; }
+  .nav a { padding:0.8rem 1.5rem;color:#777;text-decoration:none;font-size:0.85rem; }
+  .nav a:hover { color:#ddd; }
+  .nav a.active { color:#8ecda0;border-bottom:2px solid #8ecda0; }
+  .header { background:#222228;padding:1.8rem 2.5rem 1.2rem;border-bottom:1px solid #35353f; }
+  .header h1 { font-size:1.4rem;font-weight:400;color:#e8e8ec; }
+  .header h1 span { color:#8ecda0; }
+  .header p { color:#777;font-size:0.82rem;margin-top:0.3rem; }
+  .table-wrap { margin:1.2rem 2.5rem;overflow-x:auto;border-radius:8px;background:#26262e;border:1px solid #35353f; }
+  table { width:100%;border-collapse:collapse;font-size:0.82rem; }
+  th { background:#2a2a32;color:#888;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.6px;padding:0.7rem;text-align:left;border-bottom:1px solid #35353f; }
+  td { padding:0.6rem 0.7rem;border-top:1px solid #2e2e38; }
+  tr:hover { background:#2e2e36; }
+  .hotel-koloa { border-left:3px solid #6db3d4; }
+  .hotel-hyatt { border-left:3px solid #d4b86d; }
+  .hotel-hanalei { border-left:3px solid #a88bc8; }
+  .hotel-koakea { border-left:3px solid #d48b9a; }
+  .price-cell { font-weight:600;color:#d0d0da; }
+  .net-cell { font-weight:700;color:#8ecda0; }
+  .val-cell { color:#777;font-size:0.78rem; }
+  .tag { display:inline-block;padding:0.15rem 0.55rem;border-radius:6px;font-size:0.65rem;font-weight:500; }
+  .tag-cheap { background:rgba(142,205,160,0.12);color:#8ecda0; }
+  .tag-mid { background:rgba(212,184,109,0.12);color:#d4b86d; }
+  .tag-expensive { background:rgba(212,139,154,0.12);color:#d48b9a; }
+</style>
+</head><body>
+<div class="nav">
+  <a href="a-tropical.html">A) Warm Tropical</a>
+  <a href="b-minimal.html">B) Clean Minimal</a>
+  <a href="c-luxury.html">C) Dark Luxury</a>
+  <a href="d-soft.html" class="active">D) Soft Dark</a>
+</div>
+<div class="header">
+  <h1>🌺 Kauai <span>Trip Planner</span></h1>
+  <p>Costco Travel + Southwest · May 15 – June 15, 2026 · Relaxed planning</p>
+</div>
+<div class="table-wrap"><div id="table"></div></div>
+<script src="data.js"></script>
+<script>renderTable('table');</script>
+</body></html>

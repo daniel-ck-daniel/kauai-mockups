@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>C) Dark Luxury</title>
+<style>
+  * { margin:0;padding:0;box-sizing:border-box; }
+  body { font-family:'Inter',-apple-system,sans-serif;background:#0a0a0f;color:#d4d4e0;min-height:100vh; }
+  .nav { display:flex;gap:0;padding:0 2rem;background:#111118;border-bottom:1px solid #1f1f2e; }
+  .nav a { padding:0.8rem 1.5rem;color:#555;text-decoration:none;font-size:0.85rem; }
+  .nav a:hover { color:#ccc; }
+  .nav a.active { color:#d4a953;border-bottom:2px solid #d4a953; }
+  .header { background:#0e0e16;padding:2rem 2.5rem 1.2rem;border-bottom:1px solid #1a1a28; }
+  .header h1 { font-size:1.5rem;font-weight:200;color:#e8e8f0;letter-spacing:1px; }
+  .header h1 span { color:#d4a953;font-weight:500; }
+  .header p { color:#555;font-size:0.82rem;margin-top:0.4rem;letter-spacing:0.3px; }
+  .table-wrap { margin:1.5rem 2.5rem;overflow-x:auto;border-radius:6px;border:1px solid #1a1a28; }
+  table { width:100%;border-collapse:collapse;font-size:0.82rem; }
+  th { background:#0e0e16;color:#666;font-size:0.65rem;text-transform:uppercase;letter-spacing:1.2px;padding:0.8rem;text-align:left;border-bottom:1px solid #1a1a28; }
+  td { padding:0.6rem 0.8rem;border-top:1px solid rgba(255,255,255,0.02); }
+  tr:hover { background:rgba(212,169,83,0.03); }
+  .hotel-koloa { border-left:2px solid #5b9bd5; }
+  .hotel-hyatt { border-left:2px solid #d4a953; }
+  .hotel-hanalei { border-left:2px solid #9b7ec8; }
+  .hotel-koakea { border-left:2px solid #c47080; }
+  .price-cell { font-weight:500;color:#b8b8cc; }
+  .net-cell { font-weight:600;color:#d4a953; }
+  .val-cell { color:#555;font-size:0.78rem; }
+  .tag { display:inline-block;padding:0.15rem 0.5rem;border-radius:2px;font-size:0.63rem;font-weight:400;letter-spacing:0.5px;text-transform:uppercase; }
+  .tag-cheap { background:rgba(76,175,80,0.1);color:#66bb6a; }
+  .tag-mid { background:rgba(212,169,83,0.1);color:#d4a953; }
+  .tag-expensive { background:rgba(200,80,80,0.1);color:#c85050; }
+</style>
+</head><body>
+<div class="nav">
+  <a href="a-tropical.html">A) Warm Tropical</a>
+  <a href="b-minimal.html">B) Clean Minimal</a>
+  <a href="c-luxury.html" class="active">C) Dark Luxury</a>
+  <a href="d-soft.html">D) Soft Dark</a>
+</div>
+<div class="header">
+  <h1>KAUAI <span>TRIP PLANNER</span></h1>
+  <p>Costco Travel + Southwest · May 15 – June 15, 2026</p>
+</div>
+<div class="table-wrap"><div id="table"></div></div>
+<script src="data.js"></script>
+<script>renderTable('table');</script>
+</body></html>
