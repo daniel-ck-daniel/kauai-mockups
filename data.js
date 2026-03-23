@@ -12,7 +12,7 @@ const SAMPLE = [
 const HOTEL_COLORS = { 'Koloa Landing':'koloa', 'Grand Hyatt Kauai':'hyatt', '1 Hotel Hanalei Bay':'hanalei', 'Koa Kea':'koakea' };
 const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const months = ['Jan','Feb','Mar','Apr','May','Jun'];
-function fmtDate(s) { const d = new Date(s+'T12:00:00'); return `<span style="font-family:'SF Mono',Consolas,'Courier New',monospace;font-size:0.8em">${days[d.getDay()]} ${s.substring(5)}</span>`; }
+function fmtDate(s) { const d = new Date(s+'T12:00:00'); return `<span style="font-family:'SF Mono',Consolas,'Courier New',monospace">${days[d.getDay()]} ${months[d.getMonth()]} ${d.getDate()}</span>`; }
 function fmtPrice(p) { return '$'+Math.round(p).toLocaleString('en-US'); }
 
 function renderTable(containerId) {
